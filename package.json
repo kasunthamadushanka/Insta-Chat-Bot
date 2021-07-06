@@ -15,9 +15,10 @@
     "url": "https://github.com/MoeZilla/Insta-Chat-Bot/issues"
   },
   "homepage": "https://github.com/MoeZilla/Insta-Chat-Bot#readme",
+  "dependencies": {
     "@androz2091/insta.js": "^1.6.1",
     "node-fetch": "^2.6.1"
-  },
+  }
   "engines": {
     "node": ">=12.0.0"
   }
