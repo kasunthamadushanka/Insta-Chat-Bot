@@ -25,3 +25,6 @@ Moe.on('messageCreate', (m) => {
       return m.reply(json.message);
     }).catch(err => {});
 });
+
+Moe.login(process.env.Username, process.env.Password);
+
