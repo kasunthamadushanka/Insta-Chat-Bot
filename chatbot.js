@@ -11,12 +11,10 @@ Moe.on('messageCreate', (m) => {
     m.markSeen();
 
     if(m.content.toLowerCase().includes('Who Is Moezilla')) return m.chat.sendMessage('My Master MoeZilla');
-    if (m.content === '!ping') {
-        m.reply('Pong')
-    }
-    if (m.content === '!repo') {
-        m.reply('https://github.com/MoeZilla/Insta-Chat-Bot')
-    }
+    if(m.content.toLowerCase().includes('Who Is Moezilla')) return m.chat.sendMessage('My Master MoeZilla');
+    if(m.content.toLowerCase().includes('!ping')) return m.chat.sendMessage('Pong');
+    if(m.content.toLowerCase().includes('!repo')) return m.chat.sendMessage('https://github.com/MoeZilla/Insta-Chat-Bot');
+
 
     chatbot(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(m.content)}&botname=${process.env.BotName}&ownername=${process.env.OwnerName}`)
     .then(res => res.json())
