@@ -2,9 +2,9 @@
   "name": "Instagram Chatbot",
   "version": "0.0.4",
   "description": "powerfull Instagram Chatbot",
-  "main": "chatbot.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node chatbot.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
