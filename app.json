@@ -3,11 +3,11 @@
     "description": "Most powerful Instagram chatbot",
     "repository": "https://github.com/MoeZilla/Insta-Chat-Bot",
     "env": {
-        "Username": {
+        "username": {
             "description": "Instagram Username Here without @",
             "required": true
         },
-        "Password": {
+        "password": {
             "description": "Instagram Password Here",
             "required": true
         },
