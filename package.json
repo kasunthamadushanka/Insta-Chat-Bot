@@ -1,0 +1,24 @@
+{
+  "name": "Instagram Chatbot",
+  "version": "0.0.4",
+  "description": "powerfull Instagram Chatbot",
+  "main": "chatbot.js",
+  "scripts": {
+    "start": "node chatbot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoeZilla/Insta-Chat-Bot.git"
+  },
+  "author": "MoeZilla",
+  "bugs": {
+    "url": "https://github.com/MoeZilla/Insta-Chat-Bot/issues"
+  },
+  "homepage": "https://github.com/MoeZilla/Insta-Chat-Bot#readme",
+    "@androz2091/insta.js": "^1.6.1",
+    "node-fetch": "^2.6.1"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
