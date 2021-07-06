@@ -1,0 +1,28 @@
+{
+    "name": "Instagram ChatBot",
+    "description": "Most powerful Instagram chatbot",
+    "repository": "https://github.com/MoeZilla/Insta-Chat-Bot",
+    "env": {
+        "Username": {
+            "description": "Instagram Username Here without @",
+            "required": true
+        },
+        "Password": {
+            "description": "Instagram Password Here",
+            "required": true
+        },
+        "BotName": {
+            "description": "Instagram BotName",
+            "required": true
+        },
+        "OwnerName": {
+            "description": "Owner Name",
+            "required": true
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
