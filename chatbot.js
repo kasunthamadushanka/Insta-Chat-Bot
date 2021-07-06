@@ -16,7 +16,7 @@ Moe.on('messageCreate', (m) => {
     if(m.content.toLowerCase().includes('!repo')) return m.chat.sendMessage('https://github.com/MoeZilla/Insta-Chat-Bot');
 
 
-    chatbot(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(m.content)}&botname=${process.env.BotName}&ownername=${process.env.OwnerName}&user=${m.author.id}`)
+    chatbot(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(m.content)}&botname=${process.env.BotName}&ownername=${process.env.OwnerName}`)
     .then(res => res.json())
     .then(json => {
       if(!json.message) return;
