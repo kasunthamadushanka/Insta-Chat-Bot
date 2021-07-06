@@ -1,2 +1,1 @@
-moe: node index.js
-web: node index.js
+moe: node chatbot.js
