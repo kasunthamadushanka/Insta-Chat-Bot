@@ -15,7 +15,7 @@ client.on('messageCreate', (message) => {
     if(message.content.toLowerCase().includes('!Repo')) return message.chat.sendMessage('https://github.com/MoeZilla/Insta-Chat-Bot');
     if(message.content.toLowerCase().includes('!ping')) return message.chat.sendMessage('pomg');
 
-    chatbot(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(m.content)}&botname=${process.env.BotName}&ownername=${process.env.OwnerName}`)
+    chatbot(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${process.env.BotName}&ownername=${process.env.OwnerName}`)
     .then(res => res.json())
     .then(json => {
       if(!json.message) return;
